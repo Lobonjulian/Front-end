@@ -1,14 +1,14 @@
 .card {
   display: flex;
-  gap: 20px;
-  padding: 40px;
+  gap: 1.25rem;
+  padding: 2.5rem;
   transition: transform 0.2s ease;
 
   &:hover {
     cursor: pointer;
+    transform: translateY(-5px);
   }
 }
-
 
 .card__icon-container {
   flex-shrink: 0;
@@ -21,12 +21,12 @@
 .card__content {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .card__title {
   font-family: var(--font-title);
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 0.75rem + 4vw, 1.5rem);
   color: var(--text-dark);
 }
 
@@ -41,9 +41,18 @@
   color: var(--primary);
   text-decoration: none;
   font-weight: 500;
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 .card__link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 425px) {
+  .card {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--text-light);
+    flex-direction: column;
+  }
 }

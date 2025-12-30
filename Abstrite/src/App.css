@@ -9,21 +9,27 @@
 }
 
 .app__grid {
+  padding: 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 1.5rem;
 }
 
-.app__footer {
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  padding: 20px;
+.app__no-results {
+  padding: 1.75rem;
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--accent);
 }
 
 @media (max-width: 768px) {
   .app__grid {
+    padding: 0;
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-w) {
+  
 }

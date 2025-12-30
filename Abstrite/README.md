@@ -1,16 +1,22 @@
-# React + Vite
+# Abstrite Help Center
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una réplica funcional del Centro de Ayuda de Abstrite, desarrollado como parte de mi ruta de aprendizaje autodidacta en React. El objetivo principal fue dominar la composición de componentes, el manejo de props y la gestión de estados básicos.
 
-Currently, two official plugins are available:
+## 🚀 Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Arquitectura Modular: Componentes altamente reutilizables y organizados por carpetas.
 
-## React Compiler
+- Filtrado en Tiempo Real: Buscador funcional que filtra las tarjetas de ayuda utilizando el hook useState.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Metodología BEM: Estilos CSS estructurados siguiendo la convención Block Element Modifier para un código escalable y limpio.
 
-## Expanding the ESLint configuration
+- Diseño Responsivo: Adaptado para dispositivos móviles y escritorio utilizando CSS Grid y Flex.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Tipografía Personalizada: Implementación de fuentes locales (Against, Liberation Sans) mediante @font-face.
+
+## 🛠️ Stack Tecnológico
+
+- React (Vite)
+- pnpm (Gestor de paquetes)
+- CSS3 (Variables nativas y metodología BEM)
+- JavaScript ES6+

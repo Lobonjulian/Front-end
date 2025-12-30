@@ -1,4 +1,4 @@
-import Logo from '../common/Logo';
+import Logo from '@/components/common/Logo';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar__logo">
         <Logo />
-        <span className="navbar__divider"> |</span>
+        <span className="navbar__divider">|</span>
         <span className="navbar__help">Centro de Ayuda</span>
       </div>
       <div className="navbar__actions">
