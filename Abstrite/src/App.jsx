@@ -5,9 +5,11 @@ import Footer from '@/components/Footer/Footer.jsx';
 import Hero from '@/components/Hero/Hero.jsx';
 import Navbar from '@/components/Navbar/Navbar';
 import './App.css';
+import Modal from './components/common/Modal/Modal';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const filteredCards = helpContent.filter((card) =>
     card.title.toLowerCase().includes(searchTerm.toLowerCase())
@@ -16,7 +18,7 @@ function App() {
   return (
     <div className="app">
       <header>
-        <Navbar />
+        <Navbar onOpenModal={() => setIsModalOpen(true)} />
       </header>
 
       <main className="app__main">
@@ -41,6 +43,16 @@ function App() {
         </section>
       </main>
 
+      <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Solicitud de Soporte"
+      >
+        <p>
+          Estamos preparando nuestro sistema de tickets. ¡Gracias por tu
+          paciencia!
+        </p>
+      </Modal>
       <Footer />
     </div>
   );
