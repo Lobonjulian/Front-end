@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+.card__icon-container {
+  flex-shrink: 0;
+}
+
+.card__icon {
+  font-size: 2rem;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card__title {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.card__description {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+.card__link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.card__link:hover {
+  text-decoration: underline;
+}
