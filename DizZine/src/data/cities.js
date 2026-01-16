@@ -45,7 +45,7 @@ const CITIES = [
     city: 'Bucaramanga',
     department: 'Santander',
     population: 632929,
-    backgroundColor: '#0f824c', 
+    backgroundColor: '#0f824c',
     imageUrl: '/assets/Bucaramanga.avif',
   },
 ];
