@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import CITIES from './data/cities';
 import CitySection from './components/CitySection';
 import Footer from './components/Footer';
-import Header from './components/Header/Header';
+import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 
 function App() {
