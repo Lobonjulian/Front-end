@@ -1,0 +1,38 @@
+@import './variables.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+body.light {
+  background-color: var(--text-200);
+  color: var(--bg-200);
+}
+
+body.dark {
+  background-color: var(--bg-100);
+  color: var(--text-200);
+}
+
+
+section {
+  padding: var(--space-md) var(--space-lg);
+}
+
+p {
+  line-height: 1.6;
+}
