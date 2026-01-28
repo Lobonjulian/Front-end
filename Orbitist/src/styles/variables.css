@@ -14,6 +14,9 @@
   --space-sm: 16px;
   --space-md: 32px;
   --space-lg: 64px;
+
+  --font-heading: 'SolarSpace', sans-serif;
+  --font-body: 'Space Grotesk', helvetica, sans-serif;
 }
 
 [data-theme='dark'] {
@@ -24,4 +27,13 @@
 [data-theme='light'] {
   --bg-color: #f8e7e7;
   --text-color: #141414;
+}
+
+@font-face {
+  font-family: 'SolarSpace';
+  src: url('src/assets/fonts/SOLARSPACE.woff2') format('woff2'),
+    url('src/assets/fonts/SOLARSPACE.woff') format('woff');
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
 }

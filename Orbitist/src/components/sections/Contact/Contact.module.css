@@ -28,3 +28,23 @@
   gap: var(--space-xs);
   list-style: none;
 }
+
+.contact__link {
+  color: var(--accent-100);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+      transform: translateY(-2px);
+    }
+  }
+}

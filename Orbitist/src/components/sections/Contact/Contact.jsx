@@ -1,3 +1,6 @@
+import MailIcon from '@assets/icons/mail.svg';
+import InstagramIcon from '@assets/icons/Instagram.svg';
+import LinkedinIcon from '@assets/icons/Linkedin.svg';
 import styles from './Contact.module.css';
 
 const contactLinks = [
@@ -5,19 +8,19 @@ const contactLinks = [
     label: 'Email',
     value: 'hello@orbitist.studio',
     href: 'mailto:hello@orbitist.studio',
-    icon: 'https://placehold.co/40x40/cccccc/969696.png?font=raleway',
+    icon: MailIcon,
   },
   {
     label: 'Instagram',
     value: '@orbitist',
     href: 'https://instagram.com',
-    icon: 'https://placehold.co/40x40/cccccc/969696.png?font=raleway',
+    icon: InstagramIcon,
   },
   {
     label: 'LinkedIn',
     value: 'Orbitist Studio',
     href: 'https://linkedin.com',
-    icon: 'https://placehold.co/40x40/cccccc/969696.png?font=raleway',
+    icon: LinkedinIcon,
   },
 ];
 const Contact = () => {
@@ -29,7 +32,7 @@ const Contact = () => {
 
       <div className={styles.contact__content}>
         <ul className={styles.contact__list}>
-          {contactLinks.map((contact ) => (
+          {contactLinks.map((contact) => (
             <li key={contact.label}>
               <a href={contact.href} className={styles.contact__link}>
                 <img src={contact.icon} alt={contact.label} />

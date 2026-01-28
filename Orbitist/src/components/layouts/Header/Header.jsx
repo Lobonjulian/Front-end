@@ -1,4 +1,4 @@
-import Logo from '/Orbistist.svg';
+import Logo from '../../ui/Logo';
 import styles from './Header.module.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -15,8 +15,8 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__logo}>
-        <a href="/" className={styles.header__linkLogo}>
-          <img src={Logo} alt="Orbitist Studio" />
+        <a href='/' className={styles.header__logo}>
+          <Logo />
         </a>
       </div>
 
