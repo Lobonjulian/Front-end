@@ -1,10 +1,7 @@
+import { Route, Routes } from 'react-router-dom';
 import Header from './components/layouts/Header/Header';
 import Footer from '@components/layouts/Footer/Footer';
-import Hero from '@components/sections/Hero/Hero';
-import Missions from '@components/sections/Missions/Missions';
-import Container from './components/layouts/Container';
-import About from './components/sections/About/About';
-import Contact from './components/sections/Contact/Contact';
+import Home from './pages/Home';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -15,22 +12,19 @@ function App() {
   }
 
   useEffect(() => {
-    document.body.className = theme;
+    document.body.dataset.theme = theme;
   }, [theme]);
 
   return (
-    <div className={theme}>
+    <div data-theme={theme}>
       <Header />
-      <Container>
-        <Hero
-          title=" La agencia para lo que orbita después"
-          onToggleTheme={toggleTheme}
-          theme={theme}
-        />
-        <About />
-        <Missions />
-        <Contact />
-      </Container>
+      <Routes>
+        <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />
+        {/* <Route path="/marte" element={<Marte />} />
+        <Route path="/jupiter" element={<Jupiter />} />
+        <Route path="/saturno" element={<Saturno />} /> */}
+      </Routes>
+
       <Footer />
     </div>
   );

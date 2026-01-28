@@ -1,25 +1,28 @@
 import styles from './Hero.module.css';
+import HeroVisual from './HeroVisual';
 
-const Hero = ({ title, theme, onToggleTheme }) => {
+const Hero = ({ title, imgHero, onAction }) => {
   return (
     <section className={styles.hero}>
       <h1 className={styles.hero__title}>{title}</h1>
 
       <div className={styles.hero__image}>
         <img
-          src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa"
-          alt="imagen de referencia"
+          src={imgHero}
+          alt={`imagen de referencia de ${title}`}
           loading="lazy"
           className={styles.hero__img}
         />
         <button
-          onClick={onToggleTheme}
+          onClick={onAction}
           className={styles.hero__btn}
-          aria-label="Toggle theme"
+          aria-label="Hero action"
         >
-          {theme === 'dark' ? '🌜' : '🌞'}
+          ✨
         </button>
       </div>
+
+      <HeroVisual />
     </section>
   );
 };
