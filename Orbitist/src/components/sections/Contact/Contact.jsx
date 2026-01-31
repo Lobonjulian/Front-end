@@ -1,28 +1,6 @@
-import MailIcon from '@assets/icons/mail.svg';
-import InstagramIcon from '@assets/icons/Instagram.svg';
-import LinkedinIcon from '@assets/icons/Linkedin.svg';
+import { contactLinks } from '@data/contactData';
 import styles from './Contact.module.css';
 
-const contactLinks = [
-  {
-    label: 'Email',
-    value: 'hello@orbitist.studio',
-    href: 'mailto:hello@orbitist.studio',
-    icon: MailIcon,
-  },
-  {
-    label: 'Instagram',
-    value: '@orbitist',
-    href: 'https://instagram.com',
-    icon: InstagramIcon,
-  },
-  {
-    label: 'LinkedIn',
-    value: 'Orbitist Studio',
-    href: 'https://linkedin.com',
-    icon: LinkedinIcon,
-  },
-];
 const Contact = () => {
   return (
     <section className={styles.contact} id="contact">
@@ -32,10 +10,14 @@ const Contact = () => {
 
       <div className={styles.contact__content}>
         <ul className={styles.contact__list}>
-          {contactLinks.map((contact) => (
-            <li key={contact.label}>
-              <a href={contact.href} className={styles.contact__link}>
-                <img src={contact.icon} alt={contact.label} />
+          {contactLinks.map(({ label, href, Icon }) => (
+            <li key={label}>
+              <a
+                href={href}
+                aria-label={label}
+                className={styles.contact__link}
+              >
+                <Icon className={styles.contact__icon} />
               </a>
             </li>
           ))}

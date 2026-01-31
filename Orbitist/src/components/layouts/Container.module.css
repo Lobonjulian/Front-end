@@ -1,5 +1,10 @@
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 var(--space-md);
+}
+
+main,
+section:last-of-type {
+  padding-bottom: calc(var(--space-lg) * 2);
 }

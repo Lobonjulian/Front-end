@@ -17,16 +17,20 @@
 
   --font-heading: 'SolarSpace', sans-serif;
   --font-body: 'Space Grotesk', helvetica, sans-serif;
+
+  --transition-fast: 0.3s ease;
+  --transition-base: 0.5s ease;
+  --transition-slow: 0.8s ease;
 }
 
 [data-theme='dark'] {
-  --bg-color: #2b2a2a;
-  --text-color: #faf6f6;
+  --bg-color: #1f1f1f; 
+  --text-color: #fafafa;
 }
 
 [data-theme='light'] {
-  --bg-color: #f8e7e7;
-  --text-color: #141414;
+  --bg-color: #f9eded;
+  --text-color: #1a1a1a;
 }
 
 @font-face {

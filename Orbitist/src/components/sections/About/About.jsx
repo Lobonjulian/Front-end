@@ -8,8 +8,8 @@ const About = () => {
   return (
     <section className={styles.about} id="about">
       <h2 className={styles.about__title}>
-        Nos dedicamos a las ideas, el diseño y la tecnología que desafían la
-        gravedad. Cuando el mundo se detiene, nosotros orbitamos.'
+        Nos dedicamos a las ideas el diseño y la tecnología que desafían la
+        gravedad Cuando el mundo se detiene nosotros orbitamos
       </h2>
       
       <div className={styles.about__content}>

@@ -4,13 +4,14 @@ import Container from '@components/layouts/Container';
 import Hero from '@components/sections/Hero/Hero';
 import Missions from '@components/sections/Missions/Missions';
 
-const Home = ({  toggleTheme }) => {
+const Home = ({ theme, toggleTheme }) => {
   return (
     <Container>
       <Hero
         title="La agencia para lo que orbita después"
         imgHero="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa"
         onAction={toggleTheme}
+        theme={theme}
       />
       <About />
       <Missions />

@@ -1,7 +1,7 @@
+import HeroVisual from './HeroVisual/HeroVisual';
 import styles from './Hero.module.css';
-import HeroVisual from './HeroVisual';
 
-const Hero = ({ title, imgHero, onAction }) => {
+const Hero = ({ title, imgHero, onAction, theme }) => {
   return (
     <section className={styles.hero}>
       <h1 className={styles.hero__title}>{title}</h1>
@@ -22,7 +22,7 @@ const Hero = ({ title, imgHero, onAction }) => {
         </button>
       </div>
 
-      <HeroVisual />
+      <HeroVisual theme={theme}/>
     </section>
   );
 };

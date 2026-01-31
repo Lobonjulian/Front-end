@@ -1,26 +1,27 @@
-import Logo from '../../ui/Logo';
+import { Link, useNavigate } from 'react-router-dom';
+import Logo from '@components/ui/Logo';
+
 import styles from './Header.module.css';
-import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    const route = e.target.value;
-    if (!route) return;
+    const path = e.target.value;
+    if (!path) return;
 
-    navigate(`/${route}`);
+    navigate(path);
   };
 
   return (
     <header className={styles.header}>
       <div className={styles.header__logo}>
-        <a href='/' className={styles.header__logo}>
+        <Link to="/" className={styles.header__logo}>
           <Logo />
-        </a>
+        </Link>
       </div>
 
-      <nav className={styles.nav}>
+      <nav className={styles.nav} role="navigation">
         <select defaultValue="" onChange={handleChange}>
           <option value="" disabled>
             Planetas
