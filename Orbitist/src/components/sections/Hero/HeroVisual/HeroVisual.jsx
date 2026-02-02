@@ -1,12 +1,10 @@
-import nubes from '@assets/image/nube.png';
-import humo from '@assets/image/humo.png';
 import VisualLayer from './VisualLayer';
 
-const HeroVisual = ({ theme }) => {
+const HeroVisual = ({ theme, visual }) => {
   const config =
     theme === 'dark'
-      ? { image: humo, variant: 'dark' }
-      : { image: nubes, variant: 'light' };
+      ? { image: visual.layers.dark, variant: 'dark' }
+      : { image: visual.layers.light, variant: 'light' };
   return <VisualLayer {...config} />;
 };
 

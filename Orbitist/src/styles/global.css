@@ -40,10 +40,6 @@ h2 {
   line-height: 1.2;
 }
 
-section {
-  padding: var(--space-md) var(--space-lg);
-}
-
 p {
   font-size: 1rem;
   line-height: 1.6;

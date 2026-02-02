@@ -1,10 +1,10 @@
-.container {
+.sections {
+  width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: var(--space-md) var(--space-lg);
 }
 
-main,
 section:last-of-type {
   padding-bottom: calc(var(--space-lg) * 2);
 }

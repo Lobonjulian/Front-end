@@ -1,9 +1,10 @@
 import { contactLinks } from '@data/contactData';
+import Sections from '../Sections';
 import styles from './Contact.module.css';
 
 const Contact = () => {
   return (
-    <section className={styles.contact} id="contact">
+    <Sections className={styles.contact} id="contact">
       <h2 className={styles.contact__title}>
         Hablamos <a href="mailto:hello@orbitist.com">hola@orbitist.com</a>
       </h2>
@@ -27,7 +28,7 @@ const Contact = () => {
           Bogotá · Marte · Titán
         </address>
       </div>
-    </section>
+    </Sections>
   );
 };
 

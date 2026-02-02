@@ -1,0 +1,23 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.label {
+  font-size: 0.85rem;
+  color: var(--primary-100);
+  letter-spacing: 0.05em;
+}
+
+.value {
+  font-size: 1.25rem;
+  font-weight: bold;
+}

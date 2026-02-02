@@ -1,5 +1,5 @@
 .mission {
-  border-top: 1px solid var(--bg-300);
+  border-top: 1px solid var(--bg-200);
   padding: var(--space-lg) 0;
 }
 
@@ -10,7 +10,7 @@
 
 .mission__title {
   font-size: 0.85rem;
-  color: var(--primary-200);
+  color: var(--primary-100);
   margin-bottom: var(--space-xs);
 }
 
@@ -29,7 +29,7 @@
   transition: color 0.3s ease;
 
   &:hover {
-    color: var(--primary-300);
+    color: var(--primary-200);
   }
 }
 
