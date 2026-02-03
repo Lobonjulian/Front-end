@@ -8,10 +8,10 @@ Cada proyecto se encuentra es su respectiva rama lo que permite mantener el codi
 ## 📁 Lista de proyectos
 
 | #   | Proyecto                        | Estado        | Link                                         |
-| --- | ------------------------------- | ------------- | -------------------------------------------- | --- |
+| --- | ------------------------------- | ------------- | -------------------------------------------- |
 | 01  | [abstrite](../../tree/abstrite) | ✅ Producción | [Demo en vivo](https://abstrite.netlify.app) |
 | 02  | [DizZine](../../tree/DizZine)   | ✅ Producción | [Demo en vivo](https://dizzine.netlify.app)  |
-| 03  | [Orbitist](../../tree/Orbitist) | ✅ Producción | [Demo en vivo](https://orbitist.netlify.app) |     |
+| 03  | [Orbitist](../../tree/Orbitist) | ✅ Producción | [Demo en vivo](https://orbitist.netlify.app) |
 | 04  | [JoyToys](../../tree/JoyToys)   | 🚧 En curso   | Por definir                                  |
 
 ---
