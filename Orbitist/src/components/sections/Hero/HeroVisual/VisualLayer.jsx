@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import styles from './HeroVisual.module.css';
 
 const VisualLayer = ({ image, variant }) => {
@@ -7,7 +8,7 @@ const VisualLayer = ({ image, variant }) => {
         src={image}
         alt="Visual layer"
         aria-hidden="true"
-        loading="eager"
+        loading="lazy"
         decoding="async"
         className={`${styles.layer} ${styles[variant]}`}
       />
@@ -16,4 +17,4 @@ const VisualLayer = ({ image, variant }) => {
   );
 };
 
-export default VisualLayer;
+export default memo(VisualLayer);

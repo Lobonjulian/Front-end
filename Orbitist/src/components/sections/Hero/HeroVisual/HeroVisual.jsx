@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import VisualLayer from './VisualLayer';
 
 const HeroVisual = ({ theme, visual }) => {
@@ -8,4 +9,4 @@ const HeroVisual = ({ theme, visual }) => {
   return <VisualLayer {...config} />;
 };
 
-export default HeroVisual;
+export default memo(HeroVisual);

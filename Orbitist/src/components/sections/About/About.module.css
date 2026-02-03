@@ -6,7 +6,7 @@
 .about__title {
   margin-bottom: var(--space-md);
   font-size: 1.75rem;
-  color: var(--primary-200);
+  color: var(--primary-100);
   font-weight: bold;
 }
 

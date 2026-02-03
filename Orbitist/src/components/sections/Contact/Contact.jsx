@@ -1,5 +1,7 @@
 import { contactLinks } from '@data/contactData';
+import { memo } from 'react';
 import Sections from '../Sections';
+
 import styles from './Contact.module.css';
 
 const Contact = () => {
@@ -32,4 +34,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default memo(Contact);

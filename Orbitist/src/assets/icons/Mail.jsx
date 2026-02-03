@@ -1,6 +1,6 @@
-import * as React from "react"
+import { memo } from 'react';
 
-function Mail(props) {
+const Mail = ({ props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@ function Mail(props) {
         stroke="none"
       />
     </svg>
-  )
-}
+  );
+};
 
-export default Mail
+export default memo(Mail);

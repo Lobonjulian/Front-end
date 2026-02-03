@@ -23,7 +23,10 @@ function App() {
           element={<Home theme={theme} toggleTheme={toggleTheme} />}
         />
 
-        <Route path="/:planet" element={<Planet  theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route
+          path="/:planet"
+          element={<Planet theme={theme} toggleTheme={toggleTheme} />}
+        />
       </Routes>
     </MainLayout>
   );

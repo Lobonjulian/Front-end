@@ -1,4 +1,6 @@
-function LinkedIn(props) {
+import { memo } from 'react';
+
+const LinkedIn = ({props}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +36,6 @@ function LinkedIn(props) {
       </g>
     </svg>
   );
-}
+};
 
-export default LinkedIn;
+export default memo(LinkedIn);
