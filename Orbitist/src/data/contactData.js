@@ -1,6 +1,6 @@
-import InstagramIcon from '@assets/icons/Instagram';
-import LinkedinIcon from '@assets/icons/Linkedin';
-import MailIcon from '@assets/icons/Mail';
+import InstagramIcon from '@components/ui/icons/Instagram';
+import LinkedinIcon from '@components/ui/icons/LinkedIn';
+import MailIcon from '@components/ui/icons/Mail';
 
 export const contactLinks = [
   {

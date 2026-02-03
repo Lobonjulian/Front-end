@@ -1,6 +1,6 @@
 # Orbitist
 
-Landing page conceptual para un estudio creativo enfocado en diseño, tecnología y desarrollo frontend.
+Sitio web experimental enfocado en exploración visual y arquitectura frontend escalable. Proyecto construido con React y Vite, orientado a buenas prácticas de producción.
 
 ## 🧠 Concepto
 
@@ -11,17 +11,24 @@ El proyecto prioriza estructura, claridad y escalabilidad por encima de la compl
 
 - React
 - Vite
-- pnpm
+- React Router
 - CSS Modules
-- JavaScript moderno (ES6+)
+- Netlify
 
-## 📐 Estructura del proyecto
+## 🧱 Arquitectura
 
-- `Hero`: Identidad visual e impacto inicial
-- `About`: Manifiesto y visión del estudio
-- `Missions`: Servicios y capacidades organizadas
-- `Contact`: Información de contacto
-- `Footer`: Navegación secundaria fija
+```txt
+src/
+├─ assets/        # Imágenes, SVG
+├─ components/
+│  ├─ ui/         # Componentes atómicos (Logo, Iconos)
+│  ├─ sections/   # Secciones reutilizables
+│  └─ layout/     # Header, Footer
+├─ data/          # Contenido desacoplado del JSX
+├─ pages/         # Rutas principales
+├─ styles/        # Variables globales y reset
+└─ App.jsx
+```
 
 ## 🧩 Principios aplicados
 
@@ -36,3 +43,4 @@ El proyecto prioriza estructura, claridad y escalabilidad por encima de la compl
 ```bash
 pnpm install
 pnpm dev
+```
