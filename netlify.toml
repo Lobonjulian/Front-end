@@ -1,5 +1,5 @@
 [build]
-  base = "Orbitist"
+  base = "JoyToys"
   publish = "dist"
   command = "pnpm run build"
 

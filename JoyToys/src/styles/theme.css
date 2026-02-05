@@ -1,0 +1,16 @@
+@theme {
+  --color-primary-100: #ef4c3c;
+  --color-primary-200: #3498db;
+  --color-primary-300: #2ecc71;
+  --color-accent-100: #e67e22;
+  --color-accent-200: #f1c40f;
+  --color-accent-300: #9b59b6;
+  --color-text-100: #333333;
+  --color-text-200: #5c5c5c;
+  --color-bg-100: #ecf0f1;
+  --color-bg-300: #babebe;
+
+  --font-title: 'Luckiest Guy', cursive;
+  --font-text: 'Open Sans', sans-serif;
+  --font-accent: 'Pacifico', monospace, serif;
+}

@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+@import './theme.css';
+
+html {
+  scroll-behavior: smooth;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-text);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-title);
+  text-wrap: balance;
+  line-height: 1.1;
+}
+
+small,
+button {
+  font-family: var(--font-accent);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
